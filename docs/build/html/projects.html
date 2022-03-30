@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>projects package &mdash; utils 0.0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="plotting package" href="plotting.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">utils</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="NNs.html">NNs package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="normalizations.html">normalizations package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotting.html">plotting package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">projects package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-projects.various">projects.various module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-projects">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">utils</a> &raquo;</li>
+      <li>projects package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/projects.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="projects-package">
+<h1>projects package<a class="headerlink" href="#projects-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-projects.various">
+<span id="projects-various-module"></span><h2>projects.various module<a class="headerlink" href="#module-projects.various" title="Permalink to this headline"></a></h2>
+<p>Contain various functions.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="projects.various.adjecency_matrix">
+<span class="sig-prename descclassname"><span class="pre">projects.various.</span></span><span class="sig-name descname"><span class="pre">adjecency_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#projects.various.adjecency_matrix" title="Permalink to this definition"></a></dt>
+<dd><p>Compute adjecency matrix for fully connected neural network.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dataset</strong> (<em>list</em>) – Each element contains an array and each array should match
+size with the next array (as in NNs). Arrays are of the form
+(m, n), where n is input dimension and m is output dimension</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>array</strong> – Adjecency matrix of size that has the sum of widhts of all layers</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="projects.various.angle_between_vecs">
+<span class="sig-prename descclassname"><span class="pre">projects.various.</span></span><span class="sig-name descname"><span class="pre">angle_between_vecs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vecs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#projects.various.angle_between_vecs" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the angle between all vectors and norms.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>vecs</strong> (<em>list</em>) – Elements contain the vectors.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>array</strong> (<em>ndarray</em>) – The array that contains the angle in radians
+between all pairs of vectors.</p></li>
+<li><p><strong>array</strong> (<em>ndarray</em>) – The array contains the vector norms.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="projects.various.gradients_analysis">
+<span class="sig-prename descclassname"><span class="pre">projects.various.</span></span><span class="sig-name descname"><span class="pre">gradients_analysis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">grads</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#projects.various.gradients_analysis" title="Permalink to this definition"></a></dt>
+<dd><p>Count how deep gradients go and what percentage of width.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>grads</strong> (<em>list</em>) – Each element contains a list that contains the whole gradients of each
+neural net layer.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>array</strong> (<em>ndarray</em>) – An array that contains how deep gradients propagated per step</p></li>
+<li><p><strong>array</strong> (<em>ndarray</em>) – An array that contains what percentage of paths allow propagation.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="projects.various.lipschitz_dataset">
+<span class="sig-prename descclassname"><span class="pre">projects.various.</span></span><span class="sig-name descname"><span class="pre">lipschitz_dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datasets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#projects.various.lipschitz_dataset" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate mean and max Lipschitz constant for dataset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>datasets</strong> (<em>list</em>) – Each elements contains a tuple that is a dataset.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>array</strong> – Lipshitz constants of dataset</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="projects.various.lp_norm">
+<span class="sig-prename descclassname"><span class="pre">projects.various.</span></span><span class="sig-name descname"><span class="pre">lp_norm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#projects.various.lp_norm" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate p norm of vector x.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>array</em>) – Vector</p></li>
+<li><p><strong>p</strong> (<em>integer</em>) – p-norm to be calculated</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="projects.various.per_sample_angles_grad">
+<span class="sig-prename descclassname"><span class="pre">projects.various.</span></span><span class="sig-name descname"><span class="pre">per_sample_angles_grad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#projects.various.per_sample_angles_grad" title="Permalink to this definition"></a></dt>
+<dd><p>Compute angles between samples and select biggest.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>list</em>) – Each element contains a layer</p></li>
+<li><p><strong>Returns</strong> – </p></li>
+<li><p><strong>list</strong> (<em>tuple</em>) – First element contains indices; second element angles.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="projects.various.renormalizaion_3d">
+<span class="sig-prename descclassname"><span class="pre">projects.various.</span></span><span class="sig-name descname"><span class="pre">renormalizaion_3d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#projects.various.renormalizaion_3d" title="Permalink to this definition"></a></dt>
+<dd><p>Normalize data to have mean zero and biggest values as ref.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ref</strong> (<em>array</em>) – 3D array. First axis is shapes (e.g. sphere), second axis is
+points, third axis is dimensions x, y, and z.</p></li>
+<li><p><strong>data</strong> (<em>array</em>) – 4D array. First axis is epochs, second axis is shapes, third
+axis is points, and fourth axis is dimensions x, y, and z.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>array</strong> – 4D array, same shape as data, but normalized.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="projects.various.send_notification">
+<span class="sig-prename descclassname"><span class="pre">projects.various.</span></span><span class="sig-name descname"><span class="pre">send_notification</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">script_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#projects.various.send_notification" title="Permalink to this definition"></a></dt>
+<dd><p>Send email.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="projects.various.slider">
+<span class="sig-prename descclassname"><span class="pre">projects.various.</span></span><span class="sig-name descname"><span class="pre">slider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#projects.various.slider" title="Permalink to this definition"></a></dt>
+<dd><p>Slide two arrays and computes lp norms.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X1</strong> (<em>array</em>) – Array to slide</p></li>
+<li><p><strong>X2</strong> (<em>array</em>) – Array to slide</p></li>
+<li><p><strong>p</strong> (<em>integer</em>) – p-norm to be considered</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>array</strong> – Matrix with slided values</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="projects.various.slider_torch_dot">
+<span class="sig-prename descclassname"><span class="pre">projects.various.</span></span><span class="sig-name descname"><span class="pre">slider_torch_dot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#projects.various.slider_torch_dot" title="Permalink to this definition"></a></dt>
+<dd><p>Slide two arrays and computes dot product.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X1</strong> (<em>array</em>) – Array to slide</p></li>
+<li><p><strong>X2</strong> (<em>array</em>) – Array to slide</p></li>
+<li><p><strong>p</strong> (<em>integer</em>) – p-norm to be considered</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>array</strong> – Matrix with slided values</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="projects.various.sphere">
+<span class="sig-prename descclassname"><span class="pre">projects.various.</span></span><span class="sig-name descname"><span class="pre">sphere</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#projects.various.sphere" title="Permalink to this definition"></a></dt>
+<dd><p>Create a sphere with radius r.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> (<em>float</em>) – Sphere radius.</p></li>
+<li><p><strong>points</strong> (<em>int</em>) – Number of points to use. Actual number of points is points squared.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>array</strong> – (points^2, 3) array that contains points of sphere</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="projects.various.torus">
+<span class="sig-prename descclassname"><span class="pre">projects.various.</span></span><span class="sig-name descname"><span class="pre">torus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">R</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#projects.various.torus" title="Permalink to this definition"></a></dt>
+<dd><p>Create a torus with outer radius R and inner radius r.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>R</strong> (<em>float</em>) – Outer radius (bigger than r).</p></li>
+<li><p><strong>r</strong> (<em>float</em>) – Inner radius (smllaer than R).</p></li>
+<li><p><strong>points</strong> (<em>int</em>) – Number of points to use. Actual number of points is points squared.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>array</strong> – (points^2, 3) array that contains points of torus</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-projects">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-projects" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="plotting.html" class="btn btn-neutral float-left" title="plotting package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Carlos.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

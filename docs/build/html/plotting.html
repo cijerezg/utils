@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>plotting package &mdash; utils 0.0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="projects package" href="projects.html" />
+    <link rel="prev" title="normalizations package" href="normalizations.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">utils</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="NNs.html">NNs package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="normalizations.html">normalizations package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">plotting package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-plotting.animations">plotting.animations module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-plotting.plots">plotting.plots module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-plotting">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html">projects package</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">utils</a> &raquo;</li>
+      <li>plotting package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/plotting.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="plotting-package">
+<h1>plotting package<a class="headerlink" href="#plotting-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-plotting.animations">
+<span id="plotting-animations-module"></span><h2>plotting.animations module<a class="headerlink" href="#module-plotting.animations" title="Permalink to this headline"></a></h2>
+<p>File for animations.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="plotting.animations.anim_3d_data">
+<span class="sig-prename descclassname"><span class="pre">plotting.animations.</span></span><span class="sig-name descname"><span class="pre">anim_3d_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ver</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shades</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotting.animations.anim_3d_data" title="Permalink to this definition"></a></dt>
+<dd><p>Create 3d animation that rotates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>list</em>) – Each element contains an array with size (i,n,3), where i is the
+number of frames, n is the length of the data, and the three
+dimensions: x, y, z. It must be that n=size_x*size_y</p></li>
+<li><p><strong>size_x</strong> (<em>integer</em>) – Number of points along the x axis</p></li>
+<li><p><strong>size_y</strong> (<em>integer</em>) – Number of points along the y axis</p></li>
+<li><p><strong>ver</strong> (<em>integer</em>) – Vertical subplots</p></li>
+<li><p><strong>hor</strong> (<em>integer</em>) – Horizontal subplots</p></li>
+<li><p><strong>name</strong> (<em>string</em>) – The name with wich the file will be saved</p></li>
+<li><p><strong>path</strong> (<em>string</em>) – Path where video will be saved</p></li>
+<li><p><strong>shades</strong> (<em>bool</em><em> (</em><em>True by default</em><em>)</em>) – Helps reduce artifacts if False</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>It saves a video in the speficied directory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="plotting.animations.graph_anim">
+<span class="sig-prename descclassname"><span class="pre">plotting.animations.</span></span><span class="sig-name descname"><span class="pre">graph_anim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ver</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotting.animations.graph_anim" title="Permalink to this definition"></a></dt>
+<dd><p>Create a neural network animation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>list</em>) – Each element</p></li>
+<li><p><strong>loc</strong> (<em>list</em>) – Node location</p></li>
+<li><p><strong>ver</strong> (<em>integer</em>) – Vertical subplots</p></li>
+<li><p><strong>hor</strong> (<em>integer</em>) – Horizontal subplots</p></li>
+<li><p><strong>titles</strong> (<em>list</em>) – It contains titles for subplots</p></li>
+<li><p><strong>filename</strong> (<em>string</em>) – The name with wich the file will be saved</p></li>
+<li><p><strong>path</strong> (<em>string</em>) – Path where video will be saved</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>It saves a video in the specified directory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="plotting.animations.graph_anim_suboptimal">
+<span class="sig-prename descclassname"><span class="pre">plotting.animations.</span></span><span class="sig-name descname"><span class="pre">graph_anim_suboptimal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ver</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotting.animations.graph_anim_suboptimal" title="Permalink to this definition"></a></dt>
+<dd><p>Create a neural network animation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>list</em>) – Each element</p></li>
+<li><p><strong>loc</strong> (<em>list</em>) – Node location</p></li>
+<li><p><strong>ver</strong> (<em>integer</em>) – Vertical subplots</p></li>
+<li><p><strong>hor</strong> (<em>integer</em>) – Horizontal subplots</p></li>
+<li><p><strong>titles</strong> (<em>list</em>) – It contains titles for subplots</p></li>
+<li><p><strong>filename</strong> (<em>string</em>) – The name with wich the file will be saved</p></li>
+<li><p><strong>path</strong> (<em>string</em>) – Path where video will be saved</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>It saves a video in the specified directory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="plotting.animations.im_anim">
+<span class="sig-prename descclassname"><span class="pre">plotting.animations.</span></span><span class="sig-name descname"><span class="pre">im_anim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ver</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vmin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vmax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotting.animations.im_anim" title="Permalink to this definition"></a></dt>
+<dd><p>Create animations from series of images.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>list</em>) – Each element contains a sequence of images.</p></li>
+<li><p><strong>ver</strong> (<em>integer</em>) – Vertical subplots</p></li>
+<li><p><strong>hor</strong> (<em>integer</em>) – Horizontal subplots</p></li>
+<li><p><strong>titles</strong> (<em>list</em>) – It contains titles for subplots</p></li>
+<li><p><strong>filename</strong> (<em>string</em>) – The name with wich the file will be saved</p></li>
+<li><p><strong>path</strong> (<em>string</em>) – Path where video will be saved</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>It saves a video in the specified directory</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-plotting.plots">
+<span id="plotting-plots-module"></span><h2>plotting.plots module<a class="headerlink" href="#module-plotting.plots" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="plotting.plots.create_dir">
+<span class="sig-prename descclassname"><span class="pre">plotting.plots.</span></span><span class="sig-name descname"><span class="pre">create_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directory</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotting.plots.create_dir" title="Permalink to this definition"></a></dt>
+<dd><p>Create directory if it does not exist.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="plotting.plots.implot_percentile">
+<span class="sig-prename descclassname"><span class="pre">plotting.plots.</span></span><span class="sig-name descname"><span class="pre">implot_percentile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">98</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotting.plots.implot_percentile" title="Permalink to this definition"></a></dt>
+<dd><p>Plot images setting max value and min value to the chosen percentile.</p>
+<p>It saves the .png file to path + name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>array</em>) – Shape should be (x,y,z), where x is the number of images, and (y,z) is
+the images.</p></li>
+<li><p><strong>w</strong> (<em>integer</em>) – The number of subplots along the horizontal axis</p></li>
+<li><p><strong>h</strong> (<em>integer</em>) – The number of subplots along the vertical axis</p></li>
+<li><p><strong>path</strong> (<em>string</em>) – The path where the image will be saved</p></li>
+<li><p><strong>name</strong> (<em>string</em>) – The name with which the file will be saved</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>It saves the image in the specified directory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="plotting.plots.lineplot_seaborn">
+<span class="sig-prename descclassname"><span class="pre">plotting.plots.</span></span><span class="sig-name descname"><span class="pre">lineplot_seaborn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotting.plots.lineplot_seaborn" title="Permalink to this definition"></a></dt>
+<dd><p>Generate a lineplot; the line that calculates std at every point.</p>
+<p>It saves the .png file to path + name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>list</em>) – Each element in the list is a class, and has shape (y,z),
+y is the number of samples per class, and z is data length.</p></li>
+<li><p><strong>path</strong> (<em>string</em>) – The path where the image will be saved</p></li>
+<li><p><strong>name</strong> (<em>string</em>) – The name with which the file will be saved</p></li>
+<li><p><strong>classes</strong> (<em>dict</em>) – The keys should 0,1,..,n containing the class name</p></li>
+<li><p><strong>labels</strong> (<em>dict</em>) – Labels to the plot. Keys are ‘xlabel’ and ‘ylabel’</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="plotting.plots.multi_axes_plot">
+<span class="sig-prename descclassname"><span class="pre">plotting.plots.</span></span><span class="sig-name descname"><span class="pre">multi_axes_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">titles</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotting.plots.multi_axes_plot" title="Permalink to this definition"></a></dt>
+<dd><p>Plot a single regular plot with n number of axes.</p>
+<p>It saves the .png file to path + name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>list</em>) – Each element in the list is an array to be plotted.</p></li>
+<li><p><strong>path</strong> (<em>string</em>) – The path where the image will be saved.</p></li>
+<li><p><strong>name</strong> (<em>string</em>) – The name with which the file will be saved.</p></li>
+<li><p><strong>ver</strong> (<em>integer</em><em> (</em><em>default 1</em><em>)</em>) – Number of rows for the subplots.</p></li>
+<li><p><strong>hor</strong> (<em>integer</em><em> (</em><em>default 1</em><em>)</em>) – Number of columns for the subplots.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="plotting.plots.regular_plot">
+<span class="sig-prename descclassname"><span class="pre">plotting.plots.</span></span><span class="sig-name descname"><span class="pre">regular_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ver</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotting.plots.regular_plot" title="Permalink to this definition"></a></dt>
+<dd><p>Plot a regular plot.</p>
+<p>It saves the .png file to path + name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>list</em>) – Each element in the list is an array to be plotted.</p></li>
+<li><p><strong>path</strong> (<em>string</em>) – The path where the image will be saved.</p></li>
+<li><p><strong>name</strong> (<em>string</em>) – The name with which the file will be saved.</p></li>
+<li><p><strong>ver</strong> (<em>integer</em><em> (</em><em>default 1</em><em>)</em>) – Number of rows for the subplots.</p></li>
+<li><p><strong>hor</strong> (<em>integer</em><em> (</em><em>default 1</em><em>)</em>) – Number of columns for the subplots.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="plotting.plots.upper_triangular_image">
+<span class="sig-prename descclassname"><span class="pre">plotting.plots.</span></span><span class="sig-name descname"><span class="pre">upper_triangular_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ver</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotting.plots.upper_triangular_image" title="Permalink to this definition"></a></dt>
+<dd><p>Plot an upper triangular image.</p>
+<p>The colormap is design to have strong contrast with zero. It saves the
+.png file to path + name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>list</em>) – Each element in the list is an image (array) to be plotted.</p></li>
+<li><p><strong>path</strong> (<em>string</em>) – The path where the image will be saved.</p></li>
+<li><p><strong>name</strong> (<em>string</em>) – The name with which the file will be saved.</p></li>
+<li><p><strong>ver</strong> (<em>integer</em><em> (</em><em>default 1</em><em>)</em>) – Number of rows for the subplots.</p></li>
+<li><p><strong>hor</strong> (<em>integer</em><em> (</em><em>default 1</em><em>)</em>) – Number of columns for the subplots.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-plotting">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-plotting" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="normalizations.html" class="btn btn-neutral float-left" title="normalizations package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="projects.html" class="btn btn-neutral float-right" title="projects package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Carlos.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
